@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(response):
-    return HttpResponse("<h1>tech with tim!<h1>")
+def index(response, id):
+    return HttpResponse("<h1>%s<h1>" % id)
