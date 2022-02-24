@@ -1,3 +1,4 @@
 from django import forms
 
-class
+class CreateNewList(forms.Form):
+    
