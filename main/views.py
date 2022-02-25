@@ -5,6 +5,10 @@ from .forms import CreateNewList
 
 def index(response, id):
     ls = ToDoList.objects.get(id=id)
+
+    if response.method == "POST":
+        
+
     return render(response, "main/list.html", {"ls":ls})
 
 def home(response):
