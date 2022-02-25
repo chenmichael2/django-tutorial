@@ -9,6 +9,9 @@ def index(response, id):
     if response.method == "POST":
         print(response.POST)
         if response.POST.get("save"):
+            
+        elif response.POST.get("newItem"):
+            pass
 
 
     return render(response, "main/list.html", {"ls":ls})
