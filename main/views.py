@@ -14,8 +14,13 @@ def index(response, id):
                     item.complete = True
                 else: 
                     item.complete = False
+
+                item.save()
+
         elif response.POST.get("newItem"):
-            pass
+            txt = response.POST.get("new")
+
+            
 
 
     return render(response, "main/list.html", {"ls":ls})
