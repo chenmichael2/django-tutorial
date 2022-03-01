@@ -6,6 +6,9 @@
 <h3>Create Page</h3>
 <form method="post" action="/create/" class="form-group">
     {% csrf_token %}
+    <div>
+        
+    </div>
     {{form.as_p}}
     <button type="submit", name="save">Create New</button>
 </form>
